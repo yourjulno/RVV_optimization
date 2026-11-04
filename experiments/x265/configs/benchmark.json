@@ -1,0 +1,38 @@
+{
+  "binary": "/opt/diploma/x265-build/x265",
+  "binary_sha256": "0f8fc044a4ecbdfd10c72368fdcac81e559d02f5b5b51f21b85fe52c014441c1",
+  "input": "/opt/diploma/foreman_qcif.y4m",
+  "input_sha256": "9b37e95ae2d06b3b173d6130965f450009216084bae12b2025248814baf057af",
+  "qemus": {
+    "upstream-base": {
+      "path": "/experiment/syntacore-linux/bin/upstream-base-qemu-riscv64",
+      "sha256": "b1272d3d29ebdd780230b43afb0661383cfceea83b79d8bd809af1afc153b742",
+      "commit": "f7594e0cedb348169521933b00966c78cb7ba2c6"
+    },
+    "reorg-patched": {
+      "path": "/experiment/syntacore-linux/bin/reorg-patched-qemu-riscv64",
+      "sha256": "267458d2f47c101631b0dca54d718bce5286cbcb8529bdf8d1ae7cb31dffa69a",
+      "commit": "293dde53304f79749a682b256a4dbd5d672dc842"
+    }
+  },
+  "cpu": "rv64,v=true,vlen=128,elen=64",
+  "sysroot": "/usr/riscv64-linux-gnu",
+  "frames": 32,
+  "repeats": 7,
+  "timeout_seconds": 180,
+  "encoder_args": [
+    "--preset",
+    "medium",
+    "--crf",
+    "28",
+    "--pools",
+    "none",
+    "--frame-threads",
+    "1",
+    "--no-wpp",
+    "--no-progress",
+    "--no-info",
+    "--asm",
+    "RVV"
+  ]
+}

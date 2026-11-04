@@ -1,0 +1,46 @@
+{
+  "summary": [
+    {
+      "variant": "upstream-base",
+      "n": 7,
+      "median_seconds": 8.683223504000125,
+      "mean_seconds": 8.697682885000047,
+      "stdev_seconds": 0.05044922567775141,
+      "min_seconds": 8.637756045999595,
+      "max_seconds": 8.777334919999703,
+      "q1_seconds": 8.670898941500127,
+      "q3_seconds": 8.721833921000325,
+      "wall_fps": 3.6852673417030517,
+      "internal_median_seconds": 8.36,
+      "internal_median_fps": 3.83
+    },
+    {
+      "variant": "reorg-patched",
+      "n": 7,
+      "median_seconds": 8.258794335999482,
+      "mean_seconds": 8.241686521428553,
+      "stdev_seconds": 0.06429387944342842,
+      "min_seconds": 8.170736754000245,
+      "max_seconds": 8.355270504000146,
+      "q1_seconds": 8.18931846150008,
+      "q3_seconds": 8.264183566499923,
+      "wall_fps": 3.874657570841101,
+      "internal_median_seconds": 7.93,
+      "internal_median_fps": 4.04
+    }
+  ],
+  "median_speedup": 1.0513911777837337,
+  "time_reduction_percent": 4.887921724059274,
+  "paired_speedups": [
+    1.062722220214594,
+    1.0458858393347132,
+    1.070102796222175,
+    1.0586778901179137,
+    1.0513197043898015,
+    1.050514751832091,
+    1.0483766479129355
+  ],
+  "paired_median_speedup": 1.0513197043898015,
+  "output_sha256": "5b6b0f945e7a4132c0729b525bf95718beabc167ed17d7aba3eb04d3ef491d85",
+  "successful_measured_runs": 14
+}
